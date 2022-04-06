@@ -3,7 +3,7 @@ import React from 'react'
 function RegisterForm() {
     return (
         <div className="body-inner">
-            <section className="pt-1 pb-1">
+            <section className="pt-5 pb-5">
                 <div className="container-fluid d-flex flex-column">
                     <div className="row align-items-center min-vh-60">
                         <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
