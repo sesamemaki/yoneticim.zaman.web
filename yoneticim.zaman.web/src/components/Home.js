@@ -6,13 +6,14 @@ function Home() {
     return (
         <div className="body-inner">
             <section className="profile-content">
-                <div className="profile-image" style={{
+                <div className="profile-image"
+                style={{
                     backgroundImage: `url(${background})`,
                     position: 'absolute'
                 }}>
 
                 </div>
-                <div className="profile-bio">
+                <div className="profile-bio col-lg-4 m-t-5">
                     <h3>What is zaman.yonetic.im?</h3>
                     <br />
                     <p>zaman.yonetic.im is a time logging software which keeps track of your efforts.<br />
@@ -20,20 +21,14 @@ function Home() {
                     <br />
                     <h3>And what isn't?</h3>
                     <p>zaman.yonetic.im is not a issue tracker or project management software.</p>
+
+
+
+                    
                     <button className="btn m-t-30 mt-3">Log your efforts NOW!</button>
                 </div>
             </section>
-
-
-
-
-
-
-
         </div>
-
-
-
 
 
 
