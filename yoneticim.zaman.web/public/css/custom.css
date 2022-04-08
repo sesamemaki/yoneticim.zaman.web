@@ -16,3 +16,7 @@ nav {
     height: 50px;
     background: linear-gradient(45deg, rgb(156, 14, 156), #bde0db);
 }
+
+.list list-legend {
+    background: linear-gradient(45deg, rgb(156, 14, 156), #bde0db);
+}

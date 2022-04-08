@@ -5,8 +5,7 @@ import Home from "./components/Home";
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import MyProfile from "./components/MyProfile";
-
-
+import Efforts from "./components/Efforts/Efforts";
 
 function App() {
   return (
@@ -20,6 +19,7 @@ function App() {
   <Route path="/loginform" element={<LoginForm/>} exact />
   <Route path="/registerform" element={<RegisterForm/>} exact />
   <Route path="/myprofile" element={<MyProfile/>} exact />
+  <Route path="/efforts" element={<Efforts/>} exact />
 
   </Routes>
 

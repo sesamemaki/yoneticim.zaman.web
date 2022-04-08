@@ -6,11 +6,21 @@ function MyProfile() {
         <div className="body-inner">
             <section className="pt-3 pb-3">
                 <div className="container-fluid d-flex flex-column">
+                <div className="widget ">
+                    
+                    <ul className="list list-legend list-group-item list-group-item-info">
+                      <li><a href="#"><h4>Efforts</h4></a></li>
+                      <li><a href="#"><h4>Projects</h4></a></li>
+                      <li><a href="#"><h4>Users</h4></a></li>
+                      <li><a href="#"><h4>Companies</h4></a></li>
+                    </ul>
+                  </div>
                     <div className="row align-items-center min-vh-60">
                         <div className="col-md-10 col-lg-8 col-xl-7 mx-auto">
                             <h3>My Profile</h3>
                             <form id="form1" className="form-validate mt-5">
                                 <div className="h5 mb-4">Account details</div>
+                                
                                 <div className="row">
                                     <div className="form-group col-md-6">
                                         <label htmlFor="name">Name</label>
