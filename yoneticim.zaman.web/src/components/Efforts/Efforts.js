@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+import DatePickerComponent from '../Datepicker'
+
+
 
 function Efforts() {
     return (
@@ -14,6 +18,7 @@ function Efforts() {
                             <li><a href="#"><h4>Companies</h4></a></li>
                         </ul>
                     </div>
+
 
                     <div className="row mb-5">
                         <div className="col-lg-6">
@@ -51,24 +56,26 @@ function Efforts() {
                             <li><a href="#"><h4>Today</h4></a></li>
 
                         </ul>
-                        <div class="col-lg-4">
-                                <div class="form-group">
-                                    
-                                    <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Select date" />
-                                        <div class="input-group-text btn btn-light" data-target="#datetimepicker2" data-toggle="datetimepicker"><i class="icon-calendar"></i></div>
-                                    </div>
+                        <div className="col-lg-4">
+                            <div className="form-group">
+
+
+
+                                <div className="input-group date" id="datetimepicker2" data-target-input="nearest">
+                                    <input type="text" className="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Select date" />
+                                    <div className="input-group-text btn btn-light" data-target="#datetimepicker2" data-toggle="datetimepicker"><i className="icon-calendar"></i></div>
+
+                                    {DatePickerComponent}
+
+
                                 </div>
                             </div>
-
-                        {/* <div className="col-sm-12">
-                        <input type="text" style={{ width: "370px" }} placeholder="Select Date" id="" />
-                        <button type="button" className="btn btn-light">Go</button> */}
+                        </div>
                     </div>
                 </div>
 
 
-                <div  className="row mt-1">
+                <div className="row mt-1">
                     <h5>Logged Efforts for "date"</h5>
                 </div>
 
@@ -150,10 +157,14 @@ function Efforts() {
                         </table>
                     </div>
                 </div>
-        
+
             </section >
         </div >
     )
 }
+
+
+
+
 
 export default Efforts;

@@ -21,15 +21,11 @@ function Home() {
                     <br />
                     <h3>And what isn't?</h3>
                     <p>zaman.yonetic.im is not a issue tracker or project management software.</p>
-
-
-
                     
-                    <button className="btn m-t-30 mt-3">Log your efforts NOW!</button>
+                    <a href='/efforts' className="btn m-t-30 mt-3">Log your efforts NOW!</a>
                 </div>
             </section>
         </div>
-
 
 
     )

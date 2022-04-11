@@ -9,7 +9,7 @@ function MyProfile() {
                 <div className="widget ">
                     
                     <ul className="list list-legend list-group-item list-group-item-info">
-                      <li><a href="#"><h4>Efforts</h4></a></li>
+                      <li><a href="/efforts"><h4>Efforts</h4></a></li>
                       <li><a href="#"><h4>Projects</h4></a></li>
                       <li><a href="#"><h4>Users</h4></a></li>
                       <li><a href="#"><h4>Companies</h4></a></li>
