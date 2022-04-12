@@ -4,9 +4,9 @@ import React from 'react'
 const Navbar = () => {
 
     return (
-        <header id="header" class="header-always-fixed">
-            <div class="header-inner">
-                <div class="container">
+        <header id="header" className="header-always-fixed">
+            <div className="header-inner">
+                <div className="container">
 
 
                     <div id="logo">
@@ -18,13 +18,13 @@ const Navbar = () => {
                     </div>
 
                     <div id="mainMenu">
-                        <div class="container">
+                        <div className="container">
                             <nav>
                                 <ul>
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/myprofile">My Profile</a></li>
-                                    <li><a href="/registerform"><i class="fas fa-user-plus"></i>Register</a></li>
-                                    <li><a href="/loginform"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                                    <li><a href="/registerform"><i className="fas fa-user-plus"></i>Register</a></li>
+                                    <li><a href="/loginform"><i className="fas fa-sign-in-alt"></i>Login</a></li>
                                 </ul>
                             </nav>
                         </div>

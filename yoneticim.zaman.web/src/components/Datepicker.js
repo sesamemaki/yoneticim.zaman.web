@@ -1,22 +1,23 @@
 import React, { useState } from "react";
-import DatePicker from "react-datepicker";
-import 'react-datepicker/dist/react-datepicker-cssmodules.css';
-
-import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-date-picker";
+import "react-date-picker/dist/DatePicker.css";
 
 // CSS Modules, react-datepicker-cssmodules.css
 
-const DatePickerComponent = () => {
-        const [startDate, setStartDate] = useState(new Date());
-        return (
-          <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
-        );
-      };
+function DatePickerComponent() {
+  const [selectedDate, setSelectedDate] = useState(null);
 
-<DatePicker
-  selected={date}
-  onSelect={handleDateSelect} //when day is clicked
-  onChange={handleDateChange} //only when value has changed
-/>
+  return (
+    <div className="DatePickerComponent">
+      <DatePicker
+        selected={selectedDate}
+        onChange={(date) => setSelectedDate(date)}
+        maxDate={new Date()}
+        showYearDropdown
+        scrollableMonthYearDropdown
+      />
+    </div>
+  );
+}
 
 export default DatePickerComponent;
