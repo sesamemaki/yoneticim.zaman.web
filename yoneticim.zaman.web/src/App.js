@@ -6,6 +6,7 @@ import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import MyProfile from "./components/MyProfile";
 import Efforts from "./components/Efforts/Efforts";
+import DatePicker from "react-date-picker";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
   <Route path="/registerform" element={<RegisterForm/>} exact />
   <Route path="/myprofile" element={<MyProfile/>} exact />
   <Route path="/efforts" element={<Efforts/>} exact />
+  {/* <Route path="/datepicker" element={<DatePicker/>} exact /> */}
 
   </Routes>
 

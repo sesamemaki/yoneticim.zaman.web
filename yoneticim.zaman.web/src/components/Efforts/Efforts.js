@@ -105,6 +105,8 @@ function Efforts() {
             </ul>
             <div className="col-lg-4">
               <div className="form-group">
+                <DatePickerComponent />
+
                 {/* <DatePicker className="input-group date" id="datetimepicker2">
 
 </DatePicker> */}
@@ -119,16 +121,15 @@ function Efforts() {
             </div>
           </div>
 
-       
-
-
-
-
           {/* <DatePickerComponent
           selected={this.state.date}
           onChange={this.handleChangeDate}
           /> */}
-          
+
+          {/* <DatePickerComponent>
+              <h3>Date: {date} </h3>
+                <input type="date" onChange={e=>setSelectedDate(e.target.value)} />
+              </DatePickerComponent> */}
         </div>
 
         <div className="row mt-1">
