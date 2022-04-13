@@ -105,7 +105,9 @@ function Efforts() {
             </ul>
             <div className="col-lg-4">
               <div className="form-group">
+              
                 <DatePickerComponent />
+                <DatePicker />
 
                 {/* <DatePicker className="input-group date" id="datetimepicker2">
 
