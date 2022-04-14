@@ -6,7 +6,7 @@ import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
 import MyProfile from "./components/MyProfile";
 import Efforts from "./components/Efforts/Efforts";
-import DatePicker from "react-date-picker";
+// import DatePicker from "react-date-picker";
 
 function App() {
   return (

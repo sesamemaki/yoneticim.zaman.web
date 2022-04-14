@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import DatePicker from "react-date-picker";
-import "react-date-picker/dist/DatePicker.css";
-import DatePickerComponent from "../Datepicker";
+
+import $ from "jquery"
+
+
+
+
+
 
 function Efforts() {
   return (
     <div className="body-inner">
-      <section id="page-content" className="no-sidebar pt-4 pb-4">
+      <section id="page-content">
         <div className="container">
           <div className="widget ">
             <ul className="list list-legend list-group-item list-group-item-info">
@@ -103,35 +107,35 @@ function Efforts() {
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="row m-b-20">
             <div className="col-lg-4">
               <div className="form-group">
-              
-                <DatePickerComponent />
-                <DatePicker />
+                <div
+                  className="input-group date"
+                  id="datetimepicker2"
+                  data-target-input="nearest"
+                >
+                  <input
+                    type="text"
+                    className="form-control datetimepicker-input"
+                    data-target="#datetimepicker2"
+                    placeholder="Select date"
+                  />
+                  <div
+                    className="input-group-text btn btn-light"
+                    data-target="#datetimepicker2"
+                    data-toggle="datetimepicker"
+                  >
+                    <i className="icon-calendar"></i>
 
-                {/* <DatePicker className="input-group date" id="datetimepicker2">
-
-</DatePicker> */}
-
-                {/* <div className="input-group date" id="datetimepicker2" data-target-input="nearest">
-                                    <input type="text" className="form-control datetimepicker-input" data-target="#datetimepicker2" placeholder="Select date" />
-                                    <div className="input-group-text btn btn-light" data-target="#datetimepicker2" data-toggle="datetimepicker"><i className="icon-calendar"></i></div>
-                                    
-
-                                </div> */}
+                  </div>
+                </div>
               </div>
             </div>
+            
+
           </div>
-
-          {/* <DatePickerComponent
-          selected={this.state.date}
-          onChange={this.handleChangeDate}
-          /> */}
-
-          {/* <DatePickerComponent>
-              <h3>Date: {date} </h3>
-                <input type="date" onChange={e=>setSelectedDate(e.target.value)} />
-              </DatePickerComponent> */}
         </div>
 
         <div className="row mt-1">
@@ -224,4 +228,6 @@ function Efforts() {
   );
 }
 
+
 export default Efforts;
+
